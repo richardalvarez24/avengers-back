@@ -10,8 +10,9 @@ use Laravel\Sanctum\HasApiTokens;
 
 class Member extends Authenticatable
 {
+    use HasFactory;
+    
     protected $table = "members";
     protected $primarykey = "id";
     protected $fillable =['name','age','description'];
-    use HasFactory;
 }

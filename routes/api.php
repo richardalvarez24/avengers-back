@@ -15,7 +15,7 @@ use App\Http\Controllers\MembersController;
 |
 */
 
-/*CRUD para la manipulación de datos avengers*/
+/*Rutas del CRUD para la manipulación de datos del equipo avengers*/
 Route::get('/members',[MembersController::class, 'index']);
 
 Route::get('/member/{id}',[MembersController::class, 'show']);
