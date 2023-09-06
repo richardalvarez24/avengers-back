@@ -18,6 +18,8 @@ use App\Http\Controllers\MembersController;
 /*CRUD para la manipulación de datos avengers*/
 Route::get('/members',[MembersController::class, 'index']);
 
+Route::get('/member/{id}',[MembersController::class, 'show']);
+
 Route::post('/save',[MembersController::class, 'store']);
 
 Route::put('/update/{id}',[MembersController::class, 'update']);
